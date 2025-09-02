@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mini sitio · Contacto</title>
+  <meta name="description" content="Formulario accesible de contacto.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a class="brand" href="index.html">Cooksy</a>
+      <nav class="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="proyecto.html">Proyecto</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <section class="container">
+          <div class="contact-form">
+          <h1>Contacto</h1>
+          <div class="wrap-form">
+          <form class="form" id="contactForm" aria-describedby="ayuda-form">
+            <p id="ayuda-form">Los campos marcados con <span aria-hidden="true">*</span> son obligatorios.</p>
+
+            <div class="form-control">
+              <label for="nombre">Nombre <span aria-hidden="true">*</span></label>
+              <input id="nombre" name="nombre" type="text" required autocomplete="name">
+            </div>
+
+            <div class="form-control">
+              <label for="email">Correo <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" required autocomplete="email">
+            </div>
+
+            <div class="form-control">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+            </div>
+
+            <div class="form-control form-check">
+              <input id="acepto" name="acepto" type="checkbox" required>
+              <label for="acepto">Acepto ser contactado por correo <span aria-hidden= "true">*</span></label>
+            </div>
+
+            <p id="form-status" aria-live="polite"> </p>
+            <button class="button" id="submitButton" type="submit">Enviar</button>
+          </form>
+        </div>
+        </div>
+    </section>
+
+    <aside class="container note">
+      <h2>¿Qué pasa después?</h2>
+      <p>Te responderemos en 24/48hs con una guia de próximos pasos y un checklist de accesibilidad inicial.</p>
+    </aside>
+
+    <script src="js/form.js" defer></script>
+
+  </main>
+
+ <footer class="site-footer">
+  <div class="container">
+      <h3> Redes sociales</h3>
+      <ul class="social-links">
+         <li><a href="https://www.instagram.com/" aria-label="Instagram">Instagram</a></li>
+        <li><a href="https://x.com/" aria-label="X">X / Twitter</a></li>
+        <li><a href="https://www.facebook.com/" aria-label="Facebook">Facebook</a></li>
+        <li><a href="https://www.youtube.com/" aria-label="Youtube">Youtube</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <p>© <span id="anio">2025</span> Cooksy <span class="u-visually-hidden">Todos los derechos reservados.</span></p>
+    </div>
+  </footer>
+</body>
+</html>
